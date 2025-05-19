@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&3M Technology</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html">G&3M Technology</a></div>
+         <button class="menu-button" id="menu-button">&#9776;</button>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="left-section">
+                <div class="image-wrapper">
+                    <img src="img/pc 2.jpg" alt="iPad Mockup" class="main-image">
+                    <div class="number-circle">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"/></svg></div>
+                </div>
+            </div>
+            <div class="right-section">
+                <h1 class="heading">A-propos</h1>
+                <p class="description">
+Nous sommes une agence numérique à service complet, passionnée par la propulsion de votre entreprise vers l'avant dans le paysage numérique en constante évolution. <br>
+<p>Nous combinons une expertise de pointe en marketing numérique, un développement de logiciels et de systèmes informatiques innovant, et une création de sites web captivante pour offrir des solutions holistiques qui stimulent la croissance, l'engagement et le succès
+                </p>
+                <div class="followers-info">
+                    <div class="followers-icon">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></div>
+                    <span class="followers-text"><a href="">Voir plus</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menu-button');
+    const sidebar = document.getElementById('sidebar');
+
+    menuButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        sidebar.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!sidebar.contains(e.target) && e.target !== menuButton) {
+            sidebar.classList.remove('show');
+        }
+    });
+});
+</script>
+</html>
